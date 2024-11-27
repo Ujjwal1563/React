@@ -1,0 +1,14 @@
+{
+  "name": "class_2",
+  "version": "1.0.0",
+  "description": "This is class 2 where we config our react app using parcel from scratch",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ujjwal",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  }
+}

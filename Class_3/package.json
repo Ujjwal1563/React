@@ -1,0 +1,29 @@
+{
+  "name": "class_3",
+  "version": "1.0.0",
+  "description": "Laying the Foundation ",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ujjwal1563/React.git"
+  },
+  "author": "Ujjwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ujjwal1563/React/issues"
+  },
+  "homepage": "https://github.com/Ujjwal1563/React#readme",
+  "dependencies": {
+    "parcel": "^2.13.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

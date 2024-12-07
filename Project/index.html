@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Profile Identification</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      overflow: hidden; /* Prevent scrolling */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-blue-500 text-white py-4 shadow-md">
+    <div class="container mx-auto flex items-center space-x-4 px-4">
+      <!-- Logo -->
+      <img 
+        src="https://cdn3.vectorstock.com/i/1000x1000/87/72/prediction-icon-simple-element-from-data-vector-29428772.jpg" 
+        alt="Prediction Logo" 
+        class="h-10 w-10 rounded-full"
+      />
+      <!-- Heading -->
+      <h1 class="text-lg font-semibold">Fake Profile Identification</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow flex items-center justify-center">
+    <div class="flex flex-col items-center space-y-4">
+      <input 
+        id="fileInput" 
+        type="file" 
+        class="w-64 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+      />
+      <button 
+        id="uploadButton"
+        class="w-64 bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        Upload
+      </button>
+      <p id="status" class="text-sm text-gray-500"></p>
+    </div>
+  </main>
+
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const uploadButton = document.getElementById('uploadButton');
+    const statusText = document.getElementById('status');
+
+    uploadButton.addEventListener('click', () => {
+      const file = fileInput.files[0];
+      if (file) {
+        statusText.textContent = `Uploading: ${file.name}`;
+        // Simulate file upload
+        setTimeout(() => {
+          statusText.textContent = `File "${file.name}" uploaded successfully!`;
+        }, 2000);
+      } else {
+        statusText.textContent = 'No file selected!';
+      }
+    });
+  </script>
+</body>
+</html>
